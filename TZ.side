@@ -1,0 +1,53 @@
+{
+  "id": "28d8ffed-afaa-4bbb-bb3d-570891c91aa1",
+  "version": "2.0",
+  "name": "TZ",
+  "url": "https://auth.tradezeroweb.co",
+  "tests": [{
+    "id": "a18c36a8-e10b-4029-b46d-6e9aeb2603ea",
+    "name": "TZ_test1",
+    "commands": [{
+      "id": "898481f2-6914-449d-bb5b-5179f92edaba",
+      "comment": "",
+      "command": "open",
+      "target": "/exec/authn/wtLoginForm?referpg=aHR0cHM6Ly9zdGFuZGFyZC50cmFkZXplcm93ZWIuY28v&at=webtrader",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "797f24c3-1740-473c-93e4-3d6ef90f55fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22ce40af-52c7-4471-87dd-044ea465cf90",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='login'])[2]", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3bf2312-90e7-435d-9994-e29da7f2cfe9",
+      "comment": "",
+      "command": "type",
+      "target": "ctrl+4",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "869d298b-d6f7-4cbe-9840-9ba663878748",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a18c36a8-e10b-4029-b46d-6e9aeb2603ea"]
+  }],
+  "urls": ["https://auth.tradezeroweb.co/"],
+  "plugins": []
+}

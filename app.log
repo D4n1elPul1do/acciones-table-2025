@@ -1,0 +1,6 @@
+
+> acciones-table@0.0.0 start
+> node ./bin/www
+
+Thu, 11 Aug 2022 14:03:57 GMT body-parser deprecated undefined extended: provide extended option at app.js:38:17
+conexion establecida !! 
