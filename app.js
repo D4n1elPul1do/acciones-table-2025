@@ -10,14 +10,6 @@ var accionesRouter = require('./routes/acciones');
 
 var app = express();
 
-var mongoose = require('mongoose');
-
-
-mongoose.connect('mongodb://localhost:27017/datos?retryWrites=true&w=majority',
-                {useNewUrlParser: true, useUnifiedTopology: true})
-                .then(()=> console.log('conexion establecida !! '))
-                .catch((err) => console.error(err));
-
 
 // mongoose.connect('mongodb+srv://user:toor@cluster0.skcon.mongodb.net/datos?retryWrites=true&w=majority',
 //                 {useNewUrlParser: true, useUnifiedTopology: true})
