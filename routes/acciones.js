@@ -13,7 +13,7 @@ router.get('/a', function(req, res, next) {
 });
 
 router.post('/post-acciones', function(req, res, next) {
-  res.send('acciones !! ');
+  res.send('acciones !! '+req.body);
 });
 
 
