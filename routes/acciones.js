@@ -17,7 +17,7 @@ router.get('/a', function(req, res, next) {
 
 router.post('/post-acciones', function(req, res, next) {
   datos = req.body;
-  console.log('in : '+JSON.stringify(datos);
+  console.log('in : '+JSON.stringify(datos));
 
   res.json({requestBody: req.body})
 
