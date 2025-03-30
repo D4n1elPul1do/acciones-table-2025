@@ -12,4 +12,9 @@ router.get('/a', function(req, res, next) {
   res.send('information !! ');
 });
 
+router.post('/post-acciones', function(req, res, next) {
+  res.send('acciones !! ');
+});
+
+
 module.exports = router;
