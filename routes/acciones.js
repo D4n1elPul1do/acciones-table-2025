@@ -13,7 +13,10 @@ router.get('/a', function(req, res, next) {
 });
 
 router.post('/post-acciones', function(req, res, next) {
-  res.send('acciones'+req.params+'__'+JSON.stringify(req.params));
+
+  res.json({requestBody: req.body})
+
+  //res.send('acciones'+req.params+'__'+JSON.stringify(req.params));
 });
 
 
