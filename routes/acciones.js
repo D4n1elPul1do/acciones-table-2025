@@ -4,6 +4,9 @@ var mongoose = require('mongoose');
 var accion = require('../models/accion.js')
 var patron = require('../models/patron.js')
 /* GET acciones listing. */
+
+var datos = '';
+
 router.get('/', function(req, res, next) {
   res.send('!!');
 });
@@ -13,11 +16,16 @@ router.get('/a', function(req, res, next) {
 });
 
 router.post('/post-acciones', function(req, res, next) {
-
+  datos = req.body;
   res.json({requestBody: req.body})
 
   //res.send('acciones'+req.params+'__'+JSON.stringify(req.params));
 });
+
+router.get('/get-acciones', function(req, res, next) {
+  res.json({requestBody: datos})
+});
+
 
 
 
